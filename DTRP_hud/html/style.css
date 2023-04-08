@@ -1,0 +1,590 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Rubik:100,300,400,500,700');
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: 'Rubik', sans-serif;}
+
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 19.5%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 1.0%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 100%;
+}
+
+@media screen and (min-height: 720px) and (width: 1280px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 18.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.4%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 58%;
+}
+}
+
+@media screen and (min-height: 800px) and (width: 1280px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 20.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.4%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 65%;
+}
+}
+
+@media screen and (min-height: 1024px) and (width: 1280px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 25.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.4%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 80%;
+}
+}
+
+@media screen and (min-height: 768px) and (width: 1366px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 18.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.4%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 60%;
+}
+}
+
+@media screen and (min-height: 900px) and (width: 1440px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 20.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.4%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 72%;
+}
+}
+
+@media screen and (min-height: 900px) and (width: 1600px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 18.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.4%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 72%;
+}
+}
+
+@media screen and (min-height: 1200px) and (width: 1600px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 23.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.5%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 93%;
+}
+}
+
+@media screen and (min-height: 1080px) and (width: 1920px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 18.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.4%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 85%;
+}
+}
+
+@media screen and (height: 1200px) and (width: 1920px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 20.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.5%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 92%;
+}
+}
+
+@media screen and (height: 1440px) and (width: 1920px) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 18.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.5%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 112%;
+}
+}
+
+@media screen and (aspect-ratio: 21/9) {
+.playerStats{
+	position: absolute;
+	/*bottom: 20px; /* Default: 20px */
+
+	left: 18.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	/*left: 82.0%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 0.5%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+	zoom: 112%;
+}
+}
+
+.carStats{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+
+.stat{
+	color: #ffffff;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2));
+	width: 220px;
+	height: 30px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	border-radius: 3% / 30%;
+	border-bottom: 3px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 90%;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.stat .icon{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat .icon i, .stat .icon img{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -20px;
+}
+
+
+.stat2{
+	color: #ffffff;
+	background: #6e6e6e;
+	width: 102px;
+	height: 25px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	border-radius: 5px;
+	border-top: 1.5px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 90%;
+	float: left;
+}
+
+.stat2 .icon{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat2 .icon i, .stat2 .icon img{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat2 .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat2 span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -22px;
+}
+
+.stat3{
+	color: #ffffff;
+	background: #6e6e6e;
+	width: 110px;
+	height: 25px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: 40%;
+	border-radius: 5px;
+	border-top: 1.5px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 80%;
+}
+
+.stat3 .icon{
+	top: 4px;
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 4px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat3 .icon i, .stat2 .icon img{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat3 .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat3 span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -20px;
+}
+
+.stat4{
+	color: #ffffff;
+	background: #f2b068;
+	width: 220px;
+	height: 25px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	border-radius: 5px;
+	border-top: 1.5px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 90%;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.stat4 .icon{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat4 .icon i, .stat4 .icon img{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat4 .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat4 span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -20px;
+}
+
+.stat5{
+	color: #ffffff;
+	background: #66b10e;
+	width: 220px;
+	height: 25px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	border-radius: 5px;
+	border-top: 1.5px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 90%;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.stat5 .icon{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat5 .icon i, .stat5 .icon img{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat5 .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat5 span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -20px;
+}
+
+.stat6{
+	color: #ffffff;
+	background: #ed4949;
+	width: 220px;
+	height: 25px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	border-radius: 5px;
+	border-top: 1.5px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 90%;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.stat6 .icon{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat6 .icon i, .stat6 .icon img{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat6 .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat6 span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -20px;
+}
+
+.stat7{
+	color: #ffffff;
+	background: #39adce;
+	width: 220px;
+	height: 25px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	border-radius: 5px;
+	border-top: 1.5px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 90%;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.stat7 .icon{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat7 .icon i, .stat7 .icon img{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat7 .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat7 span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -20px;
+}
+
+.stat8{
+	color: #ffffff;
+	background: #39adce;
+	width: 220px;
+	height: 25px;
+	position: relative;
+	margin-bottom: 5px;
+	margin-left: -30px;
+	border-radius: 5px;
+	border-top: 1.5px solid rgba(255, 255, 255, .6);
+	border-opacity: 0.1;
+	font-size: 90%;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.stat8 .icon{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+	border-radius: 25%;
+	margin-left: 25px;
+}
+
+.stat8 .icon i, .stat8 .icon img{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat8 .icon img{
+	height: 15px;
+	width: 15px;
+}
+
+
+.stat8 span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -20px;
+}
+
+.carStats .stat{
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	text-align: right;
+}
+
+.carStats .stat .icon{
+	float: right;
+	right: 0px;
+	left: 15px;
+}
+
+.carStats .stat span{
+	white-space: nowrap;
+	right: 20px;
+}
+
+.status{
+	display: flex;
+	width: 195px;
+	position: relative;
+	left: -15px;
+	justify-content: space-between;
+}
+
+.veh-gas{
+	display: flex;
+	width: 235px;
+	position: relative;
+	right: -15px;
+	justify-content: space-between;
+}
+
+
+.vert-stat{
+	border-radius: 20%;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.vert-stat .bg{
+	height: 100%;
+	width: 100%;
+	opacity: 70%;
+	position: absolute;
+	bottom: 0;
+}
+
+.vert-stat .icon i, .vert-stat .icon img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(218, 218, 218);
+}
+
+
+#gas{
+	position: absolute;
+	right: 100px;
+	bottom: 50px;
+
+}
